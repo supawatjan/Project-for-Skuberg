@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: inset 0px -1px 0px #f3f3f4;
+  
+}
+
+header h1{
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.today{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.today svg{
+  font-size: 2rem;
+  cursor: pointer;
+}
+section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5rem;
+}
+.form-field {
+  height: 20vh;
+  width: 100%;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-field{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.btn{
+  /* display: block; */
+  width: 6rem;
+  height: 3rem;
+  border:transparent;
+  box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color:rgba(65,67,107,0.1) ;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+
+.text-input{
+  width: 380px;
+  height: 3rem;
+  border:1px solid rgb(160, 160, 160);
+  box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: text;
+  background-color: rgba(209, 209, 209, 0.061); 
+  margin-left: 1rem;
+  padding: 1rem;
+  outline: none;
+}
+.text-input:focus{
+  background-color:#fff;
+}
+.submit-field{
+  display: flex;
+  justify-content: center;
+}
+
+.all-list{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.a-list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.a-list{
+  border: transparent ;
+  width: 380px;
+  min-height: 3rem;
+  overflow: hidden;
+  padding: 10px 20px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row ;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.a-list:hover{
+  background-color:rgba(65,67,107,0.1);
+  width: 400px;
+  height: 3.2rem;
+}
+.a-list-msg{
+  width: 80%;
+  min-height: 2rem;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+.a-list-msg.finished{
+  text-decoration: line-through;
+}
+.finished-btn{
+  border: transparent;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+.finished-btn:hover{
+  font-size: 1.2rem;
+}
+.a-list-msg input{
+  width: 100%;
+  min-height: 2rem;
+  height: fit-content;
+}
+
+.a-list-btn{
+  min-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.a-list-btn button{
+  border: transparent;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color:rgba(29, 29, 29, 0.822);
+}
+.a-list-btn button:hover{
+  color: rgb(0, 0, 0) ;
+  font-size: 1.2rem;
+}
+.a-list .edit-list{
+  border:transparent;
+  outline: none;
+  background-color:transparent;
+  width: fit-content;
+  
+
+}
+.a-list .edit-list:hover{
+  background-color:transparent;
+}
+.a-list.editing{
+  background-color:rgba(65,67,107,0.1);
+  width: 400px;
+  height: 3.2rem;
+}
+.a-list.editing input{
+  font-size: 1rem;
+}
+button.save-btn {
+  font-size: 1rem;
+}
+button.save-edit-btn{
+  font-size: 150%;
+}
+.a-list-btn button{
+  display: flex;
+  align-items: center;
+}
+
+.alert-container.positive{
+  width: 250px;
+  padding: 2px 5px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  color: #000;
+  margin-top: 5px;
+  border-bottom:#43e243 solid 5px ;
+  
+}
+.alert-container.negative{
+  width: 250px;
+  padding: 2px 5px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  color: #000;
+  margin-top: 5px;
+  border-bottom:#e24343 solid 5px ;
+  
+}
+.alert-container span{
+  margin-left: 0.5rem;
+}
